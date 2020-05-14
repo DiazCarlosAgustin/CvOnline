@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="app.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <title>Cv Online</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="nav">
+            <button class="btn-menu" onclick="clickMenu()"><i class="fas fa-bars fa-2x"></i></button>
+        </nav>
+        <div class="container-nav d-none" id="container-nav">
+            <ul>
+                <li><a href="#Informacion" onclick="clickMenu()">Informacion</a></li>
+                <li><a href="#Educacion" onclick="clickMenu()">Educacion</a></li>
+                <li><a href="#Cursos" onclick="clickMenu()">Cursos</a></li>
+                <li><a href="#Experiencia" onclick="clickMenu()">Experiencia</a></li>
+                <li><a href="#Informatica" onclick="clickMenu()">Informatica</a></li>
+                <li><a href="#Redes" onclick="clickMenu()">Redes</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <div class="left">
+                <h1 class="title">    
+                    Hello <br> I´m Agustin Diaz
+                </h1>
+                <img src="IMG_20200303_222932_540.jpg" alt="" srcset="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Informacion">Informacion</a></li>
+                    <li><a href="#Educacion">Educacion</a></li>
+                    <li><a href="#Cursos">Cursos</a></li>
+                    <li><a href="#Experiencia">Experiencia</a></li>
+                    <li><a href="#Informatica">Informatica</a></li>
+                    <li><a href="#Redes">Redes</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section id="Informacion">
+        <h1>Informacion</h1>
+        <div class="info-l">
+            <p><b>Nombre: </b>Diaz Carlos Agustin</p>
+            <p><b>D.N.I: </b>40.906.482</p>
+            <p><b>Fecha Nac.: </b>08/05/1998</p>
+            <p><b>Nacionalidad: </b>Argentina</p>
+        </div>
+        <div class="info-r">
+            <p><b>Mail: </b>carlos.agustin.diaz1998@gmail.com</p>
+            <p><b>Domicilio: </b>Gral. Viamonte 417</p>
+            <p><b>Telefono: </b>(3521) 407811</p>
+        </div>
+    </section>
+    <section id="Educacion">
+        <h1>Educacion</h1>
+        <div class="edu">
+            <div class="head-edu">
+                <b>IES Siglo21</b>
+                <b>2016 - Actual</b>
+            </div>
+            <div class="body-edu">
+                <p>Tec. Analista en sistemas de computacion (Tesis pendiente)</p>
+            </div>
+        </div>
+    </section>
+    <section id="Cursos">
+        <h1>Cursos</h1>
+        <div class="cur">
+            <div class="head-cur">
+                <b>Dicsys</b>
+                <b>Abril - Ago 2019</b>
+            </div>
+            <div class="body-cur">
+                <p>Curso de capacitación de Dicsys en: Forms, Report, SSIS, SAS, Microstrategy, SQL, PL/SQL...</p>
+            </div>
+        </div>
+    </section>
+    <section id="Experiencia">
+        <h1>Experiencia</h1>
+        <div class="exp">
+            <div class="head-exp">
+                <b>Analista de Testing (Claro)</b>
+                <b>09/2019 - Actual</b>
+            </div>
+            <div class="body-exp">
+                <p>PL/SQL, Oracle Forms, Report, SQL.</p>
+            </div>
+        </div>
+    </section>
+    <section id="Informatica">
+        <h1>Informatica</h1>
+        <div class="inf-l">
+            <p><b>Framework </b></p>
+            <p>React</p>
+            <p>Vue.js</p>
+            <p>Laravel</p>
+        </div>
+        <div class="inf-c">
+            <p><b>Lenguajes</b></p>
+            <p>PHP</p>
+            <p>Java</p>
+            <p>JavaScript</p>
+            <p>SQL/PLSQL</p>
+            <p>VB.net</p>
+            <p>Python</p>
+        </div>
+        <div class="inf-r">
+            <p><b>Otros</b></p>
+            <p>Adobe XD</p>
+            <p>Git</p>
+            <p>GitHub</p>
+            <p>Figma</p>
+        </div>
+    </section>
+    <section id="Redes">
+        <h1>Redes</h1>
+        <div class="red-l">
+            <div class="cont-red">
+                <a href="https://www.instagram.com/agustin_diaz_20/" target="_blank">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </div>
+        </div>
+        <div class="red-c">
+            <div class="cont-red">
+                <a href="https://www.linkedin.com/in/carlos-agustín-díaz-9909aa169" target="_blank">
+                    <i class="fab fa-linkedin-in fa-2x"></i>
+                </a>
+            </div>
+        </div>
+        <div class="red-r">
+            <div class="cont-red">
+                <a href="https://github.com/DiazCarlosAgustin" target="_blank">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
