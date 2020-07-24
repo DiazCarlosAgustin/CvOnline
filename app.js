@@ -1,7 +1,7 @@
-var menu = document.getElementsByClassName('btn-menu')
-var conteinerNav = document.getElementById('container-nav')
+var btn = document.getElementsByClassName('btn-menu')
+var slider = document.getElementById('slider')
 
-function clickMenu(){
-    document.getElementById('container-nav').classList.toggle("d-none")
-    document.getElementById('main').classList.toggle("d-none")
+function openMenu(){
+    document.getElementById('slider').classList.toggle("hidden")
+    document.getElementById('slider').classList.toggle("open")
 }

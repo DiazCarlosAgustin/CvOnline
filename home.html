@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js" integrity="sha512-M+hXwltZ3+0nFQJiVke7pqXY7VdtWW2jVG31zrml+eteTP7im25FdwtLhIBTWkaHRQyPrhO2uy8glLMHZzhFog==" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <title>CV Online</title>
+</head>
+<body class="bg-gray-900">
+    <header class="fixed w-full">
+        <div class="w-full max-w-xs bg-white h-screen hidden" id="slider">
+            <div class="w-full flex justify-end p-5">
+                <i class="fa fa-times text-2xl text-gray-700 cursor-pointer" aria-hidden="true" onclick="openMenu()"></i>
+            </div>
+            <div class="w-full h-full text-center">
+               <a href="#Informacion" class="w-full py-4 block text-xl font-semibold  text-gray-700 hover:text-black">Informacion</a>
+               <a href="#Educacion" class="w-full py-4 block text-xl font-semibold  text-gray-700 hover:text-black">Educacion</a>
+               <a href="#Cursos" class="w-full py-4 block text-xl font-semibold  text-gray-700 hover:text-black">Cursos</a>
+               <a href="#Experiencia" class="w-full py-4 block text-xl font-semibold  text-gray-700 hover:text-black">Experiencia</a>
+               <a href="#Informatica" class="w-full py-4 block text-xl font-semibold  text-gray-700 hover:text-black">Informatica</a>
+               <a href="#Redes" class="w-full py-4 block text-xl font-semibold  text-gray-700 hover:text-black">Redes</a>
+            </div>
+        </div>
+        <div class="menu w-full h-16 container flex justify-start px-5">
+            <button class="text-white text-2xl px-3" onclick="openMenu()">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+    <div class="w-full h-full">
+        <section class="h-screen">
+            <div class="flex justify-center items-center w-full h-screen text-center">
+                <div class="w-full">
+                    <span class="text-6xl text-white w-full block font-bold">Diaz</span>
+                    <span class="text-6xl text-white w-full block font-bold">Carlos Agustin</span>
+                    <span class="text-4xl text-gray-400 w-full block">Desarrollaro Jr.</span>
+                </div>
+            </div>
+            <div class="w-full -mt-16 h-auto text-center">
+                <i class="fa fa-angle-double-down text-white text-4xl scroll" aria-hidden="true"></i>
+            </div>
+        </section>
+        <section id="Informacion" class="w-full h-full mx-auto my-6 px-5 lg:px-20">
+            <h1 class="text-4xl font-bold text-white text-center w-full pb-5">Informacion</h1>
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="flex flex-col items-center">
+                   <div class="w-full p-4 bg-gray-800 rounded-md lg:p-4 my-4 shadow-md md:h-40">
+                        <p class="text-gray-400 w-100 block text-md sm:text-lg  md:text-xl"><b>Nombre: </b>Diaz Carlos Agustin</p>
+                        <p class="text-gray-400 w-100 block text-md sm:text-lg  md:text-xl"><b>D.N.I: </b>40.906.482</p>
+                        <p class="text-gray-400 w-100 block text-md sm:text-lg  md:text-xl"><b>Fecha Nac.: </b>08/05/1998</p>
+                        <p class="text-gray-400 w-100 block text-md sm:text-lg  md:text-xl"><b>Nacionalidad: </b>Argentina</p>
+                   </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-full p-4 bg-gray-800 rounded-md lg:p-4 my-4 shadow-md md:h-40">
+                        <p class="text-gray-400 w-100 block text-md sm:text-lg  md:text-xl"><b>Mail: </b>carlos.agustin.diaz1998@gmail.com</p>
+                        <p class="text-gray-400 w-100 block text-md sm:text-lg  md:text-xl"><b>Domicilio: </b>Gral. Viamonte 417</p>
+                        <p class="text-gray-400 w-100 block text-md sm:text-lg  md:text-xl"><b>Telefono: </b>(3521) 407811</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Educacion" class="w-full h-full mx-auto my-6 px-5 lg:px-20">
+            <h1 class="text-4xl font-bold text-white text-center w-full pb-5">Educacion</h1>
+            <div class="edu w-full p-2 bg-gray-800 rounded-md lg:p-4 my-4 shadow-md">
+                <div class="w-full flex justify-between">
+                    <b class="text-gray-400 text-md sm:text-lg md:text-lg">2016 - Actual</b>
+                    <b class="text-gray-400 text-md sm:text-lg md:text-lg">IES Siglo XXI, Córdoba</b>
+                </div>
+                <div class="body-edu pt-3">
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg">Tec. Analista en sistemas de computacion. (Tesis pendiente)</p>
+                </div>
+            </div>
+            <div class="edu w-full p-2 bg-gray-800 rounded-md lg:p-4 my-4 shadow-md">
+                <div class="w-full flex justify-between">
+                    <b class="text-gray-400 text-md sm:text-lg md:text-lg">2009 - 2015</b>
+                    <b class="text-gray-400 text-md sm:text-lg md:text-lg">IPEQ, Quilino, Cordoba</b>
+                </div>
+                <div class="pt-3">
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg">Bachiller orientado en Administración y Economia.</p>
+                </div>
+            </div>
+        </section>
+        <section id="Cursos" class="w-full h-full mx-auto my-6 px-5 lg:px-20">
+            <h1 class="text-4xl font-bold text-white text-center w-full pb-5">Cursos</h1>
+            <div class="w-full p-2 bg-gray-800 rounded-md lg:p-4 my-4 shadow-md">
+                <div class="w-full flex justify-between">
+                    <b class="text-gray-400 text-md sm:text-lg md:text-lg">Abril - Ago 2019</b>
+                    <b class="text-gray-400 text-md sm:text-lg md:text-lg">Dicsys</b>
+                </div>
+                <div class="pt-3">
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg">Curso de capacitación de Dicsys en: Forms, Report, SSIS, SAS, Microstrategy, SQL, PL/SQL...</p>
+                </div>
+            </div>
+        </section>
+        <section id="Experiencia" class="w-full h-full mx-auto my-6 px-5 lg:px-20">
+            <h1 class="text-4xl font-bold text-white text-center w-full pb-5">Experiencia</h1>
+            <div class="w-full p-2 bg-gray-800 rounded-md lg:p-4 my-4 shadow-md">
+                <div class="w-full flex justify-between">
+                    <b class="text-gray-400 text-md sm:text-lg md:text-lg">09/2019 - Actual</b>
+                    <b class="text-gray-400 text-md sm:text-lg md:text-lg">Analista de Testing (Claro)</b>
+                </div>
+                <div class="pt-3">
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg">Desarrollo de casos de prueba y ejecución de pruebas de sistemas, Jira, PL/SQL, Oracle Forms, Report, SQL.</p>
+                </div>
+            </div>
+        </section>
+        <section id="Informatica" class="w-full h-full mx-auto my-6 px-5 lg:px-20">
+            <h1 class="text-4xl font-bold text-white text-center w-full pb-5">Informatica</h1>
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center gap-4">
+                <div class="w-full p-2 bg-gray-800 rounded-md lg:p-4 my-4 shadow-md">
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg lg:2xl"><b>Framework / Libreria </b></p>
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg lg:2xl">Bootstrap</p>
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg lg:2xl">Tailwind css</p>
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg lg:2xl">React</p>
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg lg:2xl">Vue.js</p>
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg lg:2xl">Laravel</p>
+                </div>
+                <div class="w-full p-2 bg-gray-800 rounded-md lg:p-4 my-4 shadow-md">
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg lg:2xl"><b>Lenguajes</b></p>
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg lg:2xl">PHP</p>
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg lg:2xl">Java</p>
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg lg:2xl">JavaScript</p>
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg lg:2xl">SQL/PLSQL</p>
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg lg:2xl">VB.net</p>
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg lg:2xl">Python</p>
+                </div>
+                <div class="w-full p-2 bg-gray-800 rounded-md lg:p-4 my-4 shadow-md">
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg lg:2xl"><b>Otros</b></p>
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg lg:2xl">Adobe XD</p>
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg lg:2xl">Git</p>
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg lg:2xl">GitHub</p>
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg lg:2xl">Figma</p>
+                    <p class="text-gray-400 text-md sm:text-lg md:text-lg lg:2xl">Jira</p>
+                </div>
+            </div>
+        </section>
+        <section id="Redes" class="w-full h-full mx-auto my-6 px-5 lg:px-20 mb-10">
+            <h1 class="text-4xl font-bold text-white text-center w-full pb-5">Redes</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center gap-4">
+                <div class="red-l flex justify-center my-3">
+                    <div class="cont-red">
+                        <a class="text-gray-400" href="https://www.instagram.com/agustin_diaz_20/" target="_blank">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center my-3">
+                    <div class="cont-red">
+                        <a class="text-gray-400" href="https://www.linkedin.com/in/carlos-agustín-díaz-9909aa169" target="_blank">
+                            <i class="fab fa-linkedin-in fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center my-3">
+                    <div class="cont-red">
+                        <a class="text-gray-400" href="https://github.com/DiazCarlosAgustin" target="_blank">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
